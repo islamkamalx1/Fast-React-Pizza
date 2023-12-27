@@ -1,8 +1,34 @@
-# React + Vite
+# Fast React Pizza
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Requirements
+- No user accounts and no login: users just input their names before using the app.
+- Users can order one or more pizzas from a menu.
+- The pizza menu can change, so it should be loaded from an API.
+- Users can add multiple pizzas to a cart before ordering.
+- Ordering requires just the user's name, phone number, and address.
+- GPS location should should be provided, to make delivery easier.
+- Users can make their order a "priority" for an additional 20% of the cart price.
+- Orders are made by sending a POST request with the order data (user data + selected pizzas) to the API.
+- Each order will get a unique ID that should be displayed, so the user can later look up their order based on the ID.
+- Users should be able to mark their order a "priority order" even after it has been placed.
 
-Currently, two official plugins are available:
+## Features
+- User
+- Menu
+- Cart
+- order
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## External Services
+- ### apiRestaurant
+  - getMenu
+  - getOrder
+  - createOrder
+  - updateOrder 
+- ### apiGeoCoding
+  - getAddress
+## Tools
+- React
+- React Router Dom v6.4
+- Redux Toolkit
+- Tailwindcss
+- vite
